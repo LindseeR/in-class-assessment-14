@@ -5,14 +5,14 @@
 
 html {
   font-family: Verdana, sans-serif;
-  color: #668ba4;
+  color: #d4a5a5;
   font-size: 16px;
 }
 
 body {
   min-width: 500px;
   margin: auto;
-  background-color: #feffdf;
+  background-color: #f9ffea;
 }
 
 header, footer{
@@ -20,8 +20,8 @@ header, footer{
   min-width: 500px;
   height: 50px;
   padding: 15px 0 30px 0;
-  background-color: #dde0ab;
-  color: #feffdf;
+  background-color: #a6d0e4;
+  color: #f9ffea;
 }
 
 .navLogo {
@@ -42,6 +42,35 @@ img {
   height: auto;
 }
 
-.bear {
+.blind-box {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column; 
+  background-color: ##f9ffea; 
+  border-radius: 15px; 
+  border: .15rem solid #a6d0e4; 
+  padding: 1rem; 
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  justify-content: center; 
+  padding: 2rem;
+  grid-auto-rows: auto;
+  gap: 3rem;
+  padding: 4rem; 
+}
+
+.clock {
+  padding: 5px;
+  width: 20px;
+}
+
+.rarity {
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0rem; 
+  padding: 0px 5px 5px 5px; 
 }
