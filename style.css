@@ -18,6 +18,7 @@ body {
 header, footer{
   text-align: center;
   padding: 2rem 1 rem;
+  height: auto; 
   background-color: #a6d0e4;
   color: #f9ffea;
 }
