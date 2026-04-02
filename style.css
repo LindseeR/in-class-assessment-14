@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; 
 }
 
 html {
@@ -10,26 +11,23 @@ html {
 }
 
 body {
-  min-width: 500px;
-  margin: auto;
+  margin: 0 auto;
   background-color: #f9ffea;
 }
 
 header, footer{
   text-align: center;
-  min-width: 500px;
-  height: 50px;
-  padding: 15px 0 30px 0;
+  padding: 2rem 1 rem;
   background-color: #a6d0e4;
   color: #f9ffea;
 }
 
 .navLogo {
-  font-size: 2.9rem;
+  font-size: 3rem;
   font-weight: 700;
   padding: 10px;
   font-family: Georgia, serif;
-  font-weight: 900;
+  font-weight: 800;
   font-style: uppercase;
 }
 
@@ -43,10 +41,10 @@ img {
 }
 
 .blind-box {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px 0 rgba(212, 165, 165, 0.74);
   display: flex;
   flex-direction: column; 
-  background-color: ##f9ffea; 
+  background-color: #f9ffea; 
   border-radius: 15px; 
   border: .15rem solid #a6d0e4; 
   padding: 1rem; 
@@ -55,22 +53,44 @@ img {
 
 .grid-container {
   display: grid; 
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, minmax(200px, 1fr)); 
   justify-content: center; 
-  padding: 2rem;
   grid-auto-rows: auto;
-  gap: 3rem;
+  grid-auto-rows: minmax(1fr, auto);
+  gap: 2rem;
   padding: 4rem; 
 }
 
 .clock {
-  padding: 5px;
-  width: 20px;
+  display: inline;
+  align-items: center; 
+  margin: 0.5rem;
+  width: 1rem; 
+  height: 1rem;
 }
 
 .rarity {
-  display: inline-block;
+  display: inline;
   font-weight: 600;
   letter-spacing: 0rem; 
   padding: 0px 5px 5px 5px; 
+}
+
+.description { 
+  border-top: solid #a6d0e4;
+  padding-top: 0.75rem; 
+  line-height: 1.5;
+}
+
+.rare-class {
+  display: flex; 
+  align-items: center;
+  gap: 0.15rem
+}
+
+.name {
+  color: #a6d0e4;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem; 
+  
 }
